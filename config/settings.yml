@@ -1,0 +1,12 @@
+plugins:
+    home_category_enabled:
+        type: boolean
+        default: true
+    home_category_id:
+        type: category
+        default: ''
+        client: true
+    home_category_slug:
+        type: string
+        default: ''
+        client: true
