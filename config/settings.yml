@@ -6,7 +6,3 @@ plugins:
         type: category
         default: ''
         client: true
-    home_category_slug:
-        type: string
-        default: ''
-        client: true

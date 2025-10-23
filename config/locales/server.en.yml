@@ -2,4 +2,3 @@ en:
     site_settings:
         home_category_enabled: 'Enable/disable the home category plugin'
         home_category_id: 'Pick default home category'
-        home_category_slug: 'The default home category slug. AUTOMATICALLY SET, DO NOT MODIFY!'
