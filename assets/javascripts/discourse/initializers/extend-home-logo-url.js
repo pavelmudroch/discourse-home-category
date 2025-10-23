@@ -3,10 +3,11 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 function extendHomeLogoUrl(api) {
 	const siteSettings = api.container.lookup("site-settings:main");
 	const categoryId = Number.parseInt(siteSettings.home_category_id, 10);
-	if (!Number.isFinite(categoryId)) return;
+	if (!Number.isFinite(categoryId)) {
+		return;
+	}
 
-	const categorySlug = siteSettings.home_category_slug;
-	const href = `/c/${categorySlug}/${categoryId}`;
+	const href = `/c/${categoryId}`;
 	api.registerValueTransformer("home-logo-href", () => href);
 }
 
